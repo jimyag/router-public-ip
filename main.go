@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"router-public-ip/report"
+)
 
 func main() {
-	fmt.Println("Hello World!")
+	re := &report.MyReport{}
+	fmt.Println(re.Send())
 }
